@@ -1,0 +1,15 @@
+{
+  "name": "cubo-back",
+  "version": "1.0.0",
+  "description": "Application Back-End for the Cubo Challenge",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Moreira (moreiraphs@outlook.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.16.1",
+    "nodemon": "^2.0.2"
+  }
+}
