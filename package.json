@@ -13,5 +13,8 @@
   "devDependencies": {
     "json-server": "^0.16.1",
     "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
   }
 }

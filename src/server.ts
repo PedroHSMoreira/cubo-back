@@ -4,13 +4,15 @@ const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
-import ParticipationController  from "./controllers/part.controller";
+import AuthMiddleware from "./middlewares/auth.middleware";
+import AuthorizationController from "./controllers/authz.controller";
 
 server.use(middlewares)
 
 server.use(jsonServer.bodyParser)
 
-// server.use('/participation', ParticipationController.create)
+server.post('/login', AuthMiddleware.handleAuthentication)
+server.use('/participation', AuthorizationController.handleAuthorization)
 
 server.use(router)
 
